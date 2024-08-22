@@ -65,7 +65,6 @@ for product in subfolders:
 
 # Save the concatenated dataframes to CSV files in the 'concatenate' folder
 for key, dataframe in concatenated_dataframes.items():
-    output_path = os.path.join(output_folder, f'{key}24
-                               _concatenated.csv')
+    output_path = os.path.join(output_folder, f'{key}_concatenated.csv')
     dataframe.to_csv(output_path, index=False)
     print(f'Saved: {output_path}')
